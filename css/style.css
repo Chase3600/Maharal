@@ -94,15 +94,17 @@ h2{
     }
 
 
-    media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
         .hero {   
             display: grid;   
-            grid-template-columns: .3fr 1fr  1fr .3fr;
+            grid-template-columns: .4fr 1fr  1fr .4fr;
             grid-gap: .5rem;
             justify-content: space-evenly;  
-            height:35rem;  
-            }
-        
+            height:25rem;
+            overflow: hidden;  
+            border-bottom: 1px solid orangered;
+            height: 25rem;
+            }        
       }
 .header {
     text-align: center;
@@ -114,7 +116,8 @@ h2{
 }
 .first-p {
     text-align: justify; 
-    line-height: 1.2rem;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Open Sans', sans-serif;
     margin: 0.5 0.5;  
    
@@ -125,7 +128,8 @@ h2{
     margin: 0 0;   
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
     margin: 0.5 0.5;
 }
 
@@ -134,8 +138,7 @@ h2{
         text-align: justify; 
        font-size: 0.9rem;
        font-family: 'Open Sans', sans-serif;
-        margin: 0 1rem;
-        border-left: 1px solid orangered;
+        margin: 0 1rem;      
         padding-left: 1rem;    
         line-height: 1.1rem;
     }
@@ -145,8 +148,7 @@ h2{
         margin: 0rem 1rem;  
         font-size: 0.9rem; 
         text-align: justify;
-        font-family:  'Open Sans', sans-serif;
-        border-right: 1px solid orangered; 
+        font-family:  'Open Sans', sans-serif;         
         padding-right: 1rem;
         line-height: 1.1rem;
     }
@@ -160,13 +162,29 @@ h3 {
     font-family: cursive;
     font-size: 1.5rem;
     border-top: 1px solid orangered;
-    border-right: 1px solid orangered;
-    border-left: 1px solid orangered;
-    margin: 2rem;
+     margin-top: 1rem;
+     padding-top: 1rem;
 }
 
 /* three column content  */
 
+
+
+
+
+.wrapper{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.three {
+
+    background-color: rgba(15, 15, 119, 0.123);
+    margin:1rem;
+    font-family: 'Open Sans', sans-serif;    
+}    
 @media only screen and (min-width: 600px) {
     .wrapper {
         display: grid;    
@@ -179,30 +197,12 @@ h3 {
 }
 
 @media only screen and (min-width: 600px) {
-    .three {
-        width: 15.5rem;        
+    .three {          
         background-color:   rgba(112, 99, 119, 0.226) ;
        padding: 0.3rem;
-       text-align: justify;    
+       text-align: justify;
+       height: 15rem;    
     }
 }
-
-
-
-.wrapper{
-    padding-top: 1rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-}
-
-.three {
-    width: 18rem;
-    height: 14rem;
-    background-color: rgba(15, 15, 119, 0.123);
-    margin:auto;
-    font-family: 'Open Sans', sans-serif;
-    float: left;
-}    
 
 
